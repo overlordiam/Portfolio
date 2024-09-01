@@ -10,6 +10,8 @@ const SectionTemplate = ({ title, projects }) => {
           <div key={index} className="bg-gray-800 p-6 rounded hover:bg-gray-700 transition duration-300">
             <h3 className="text-xl font-semibold mb-4">{project.name}</h3>
             <p className="mb-4">{project.description}</p>
+            <p className="mb-4"><span className="font-bold">Story time:</span>  {project.storyTime}</p>
+            <p className="mb-4"><span className="font-bold">Tech:</span>  {project.technologies}</p>
             <a href={project.link} target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">
               View Project
             </a>
