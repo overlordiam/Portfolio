@@ -32,7 +32,7 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-4">Who Am I?</h2>
           <p className="text-lg mb-4">
             Hi there! Pleasure to meet you. Curious as to who Suhaas is? A wizard in Web Development? The G.O.A.T. in Artificial Intelligence? Or perhaps a Data Engineering Maestro? Well, I’m pretty much all of that—minus the ostentatious adjectives!
-            I am also a technical blogger, sharing insights and experiences from my journey through the tech world. More formally, I am a passionate developer and engineer who thrives at the intersection of technology and creativity. With a Bachelor's and a Master's degree in Computer Science, along with a strong background in web development, AI, and data engineering, I bring a diverse set of skills to tackle complex challenges and create impactful solutions.
+            I am also a technical blogger, sharing insights and experiences from my journey through the tech world. More formally, I am a passionate software developer and engineer who thrives at the intersection of technology and creativity. With a Bachelor's and a Master's degree in Computer Science, along with a strong background in web development, AI, and data engineering, I bring a diverse set of skills to tackle complex challenges and create impactful solutions.
           </p>
           <p className="text-lg mb-4">
             Over the years, I have developed several web applications, explored the potential of artificial intelligence in solving real-world problems, and worked with vast datasets to derive meaningful insights. I love building things from scratch, whether it's a website, a machine learning model, or a compelling story on my blog.

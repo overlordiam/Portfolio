@@ -3,6 +3,34 @@ import React from "react";
 import SectionTemplate from "./SectionTemplate";
 
 const AIEngineer = () => {
+
+  const title = "The AI G.O.A.T (that's stretching it a little)"
+  const subTitle = "I love Artificial Intelligence (not when they turn red and start flashing). The power it holds in making the world a better place is mind-boggling. I stepped foot into this field with a dream. Far fetched but my strong motivation, I want to eliminate disability with the power of AI. I am making my way up there slowly and steadily. Remember the name!!"
+  
+  const internships = [
+    {company: " Voice Conversion using discrete audio features, Concordia University", role: "Research Assistant", duration: "Jun ’24 – Aug ‘24", technologies: " Speechbrain, PyTorch, Python, HuggingFace, Shell", 
+    description: [
+        "Training a voice conversion model using Speechbrain with discrete audio tokens for increased efficiency and reduced computation, employing codecs and discrete self-supervised models for audio discretization.",
+        "Experimented with various encoder-decoder architectures and speaker embeddings to learn accurate voice mappings.",
+        "The architecture reduces the train times by 22% and computation requirements by at least 30% compared to contemporary architectures. Currently undergoing optimizations."
+      ],
+    },
+    {company: "Hermis, Inc", role: "Software Engineering (Intern)", duration: "Dec ’23 – Apr ’24 ", technologies: "Python, Numpy, Pandas, Langchain, PyTorch, LLM, FastAPI", 
+    description: [
+        "Performed data analytics on quiz responses to build employee demographics and dashboards.",
+        "Spearheaded the development of a team-building quiz application using Small/Large Language Models (Mistral, Gemma, Phi, Gemini and OpenAI) and Retrieval-Augmented Generation.",
+        "Attained 100% data privacy by localizing the language models while decreasing VRAM storage demands by at least 50% through parameter quantization.",
+        "Implemented a robust RESTful API using FastAPI for remote access to the quiz application."
+    ]},
+    {company: "JuniorKids", role: "Software Engineering (Intern)", duration: "Jun ’23 – Sep ’23", technologies: "Python, LoopGPT, Screaming frog, OpenAI, Git", 
+    description: [
+        "Developed software solutions using LLMs (GPT-3.5, GPT-4) for knowledge extraction and question answering on web and internal knowledge bases, enhancing productivity of the finance and marketing teams by 60%.",
+        "Implemented AI agents to streamline the analysis pipeline, enabling stakeholders to query company statistics in plain English and receive insightful data-driven responses.",
+        "Established an automated workflow for accessing and processing real-time Google Analytics and Shopify data.",
+        "Developed a website and performed Search Engine Optimization using Screaming Frog to increase website traffic by 5%."
+    ]}
+]
+  
   const projects = [
     { name: "Revise Mate", description: "A system that generates a quick quiz with an interactive interface based on input text or document.", storyTime: "My mother is a veteran lecturer. One day, she told me how time-consuming it is for teachers to create new questions for every class, every year, for revision. Coincidentally, I was interested in Retrieval-Augmented Generation (RAG) at the time, so I told her to hold my glass of water—and boom! I created this project for her, and she actually uses it now. She thought I was a genius for this, bwahahaha. I have a long way to go =(", technologies: "Python, Langchain, FastAPI, Hugginface, Streamlit, ChromaDB", link: "https://github.com/overlordiam/ReviseMate" },
     { name: "SLM Comparitive Analysis", description: "A comparison of four different Small Language Models (Mistral-7B, Zephyr_7B, Orca-7B, and Phi-2) in a question-answering task.", storyTime: "This project serves as a precursor to the Revise Mate project. During one of my internships, I was tasked with analyzing existing SLMs (Small Language Models) to determine which model performed best overall. This analysis was one of the experiments I conducted. Based on the specific use-case, I could then recommend and implement the most suitable model for the task at hand.", technologies: "Python, PyTorch, Numpy, Plotly, Langchain, Hugginface Transformers, ChromaDB", link: "https://github.com/overlordiam/SLM_comparison" },
@@ -12,7 +40,7 @@ const AIEngineer = () => {
 
   ];
 
-  return <SectionTemplate title="The AI G.O.A.T (that's stretching it a little)" projects={projects} />;
+  return <SectionTemplate title={title} subtitle={subTitle} projects={projects} internships={internships} />;
 };
 
 export default AIEngineer;

@@ -3,6 +3,9 @@ import React from "react";
 import SectionTemplate from "./SectionTemplate";
 
 const DataEngineer = () => {
+
+  const title = "The Data Engineeting Maestro (On the way to becoming one!!)"
+  const subTitle = "While browsing LinkedIn, I stumbled upon an architecture diagram illustrating the intricate flow of data from its source to various databases. The complexity and structure of this diagram captivated me. Amidst the myriad components, I recognized familiar elements like Machine Learning and Databases, but I was struck by how ML occupied just a small portion of the overall picture. This revelation shifted my perspective dramatically. The adage 'Data is the new electricity' resonated with me as I absorbed the diagram's implications. I realized that my previous focus on ML, while valuable, was just one part of a much larger, more complex ecosystem. The true power lay in the orchestration of data itself - its collection, transformation, and secure delivery."
   const projects = [
     { name: "Azure Data-Engineering Pipeline", description: "This project illustrates the implementation of a comprehensive, end-to-end data pipeline using Azure's cloud ecosystem and Delta Lake technology. It covers the entire data lifecycle, from ingestion to analysis, by integrating various Azure services and tools to ensure efficient and reliable data processing.", storyTime: "I have performed many machine learning tasks and often wondered how the data arrived in such a neat and compact form.  I created this project to understand the transformation from chaos to order. This was my first data engineering project. Taking my first step in this field was a tough one. However, while executing this project, things fell in place one by one.", technologies: "Python, PySpark, SQL, Databricks, Azure Suite, PowerBI", link: "https://github.com/overlordiam/Azure-DE-F1" },
     { name: "Real-Time Wikimedia Data Pipeline", description: "This project demonstrates a comprehensive, end-to-end data pipeline that captures, processes, and analyzes real-time data from Wikimedia. It consists of producers reading data from Wikimedia, redirected by the Kafka brokers to subscribed consumers and finally resolved into an ElasticSearch database.", storyTime: "I made this project to solely learn Kafka. As a web developer as well, I understood how imperative Kafka is to the scalability of applications. This is a mini-project made to get my hands dirty with the fundamentals of Kafka. Stay tuned to learn about the new project!!", technologies: "Java, Kafka, Zookeeper, ElasticSearch", link: "https://github.com/overlordiam/kafka-project" },
@@ -10,7 +13,7 @@ const DataEngineer = () => {
     { name: "Automated Data Pipeline with Airflow", description: "This project aims to develop a robust and scalable data pipeline that automates the process of extracting data from Google's API, transforming it and storing it in an Amazon S3 bucket.", storyTime: "My motivation to learn Airflow stems from the countless resources pointing to its significance in data orchestration.  Having previously learned Azure Data Factory, I initially assumed the two would be quite similar. However, I quickly realized how mistaken I was. This project has truly taught me the value of programmatically creating orchestrations, in contrast to the drag-and-drop interface I was accustomed to.", technologies: "Python, Pandas, Apache Airflow, AWS S3", link: "https://github.com/overlordiam/Automated-Data-Pipeline-Airflow" },
   ];
 
-  return <SectionTemplate title="The Data Engineeting Maestro (On the way to becoming one!!)" projects={projects} />;
+  return <SectionTemplate title={title} subtitle={subTitle} projects={projects} />;
 };
 
 export default DataEngineer;
