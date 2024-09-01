@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import WebDeveloper from "./components/WebDeveloper";
+import AIEngineer from "./components/AIEngineer";
+import DataEngineer from "./components/DataEngineer";
+import Blogger from "./components/Blogger";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="bg-gray-900 text-white min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/web-developer" element={<WebDeveloper />} />
+          <Route path="/ai-engineer" element={<AIEngineer />} />
+          <Route path="/data-engineer" element={<DataEngineer />} />
+          <Route path="/blogger" element={<Blogger />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
