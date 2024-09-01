@@ -8,8 +8,8 @@ const Home = () => {
     <div className="container mx-auto px-4 py-16">
       <div className="text-center">
         {/* Name Section */}
-        <h1 className="text-4xl font-bold mb-4">Suhaas Gummalam</h1>
-        <p className="text-xl mb-8">Welcome to my portfolio website!</p>
+        <h1 className="text-7xl font-bold mb-4">Suhaas Gummalam</h1>
+        <p className="text-3xl mb-8">Welcome to my portfolio website!</p>
 
         {/* Social Icons Section */}
         <div className="flex justify-center space-x-6 mb-12">
