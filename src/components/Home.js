@@ -1,4 +1,3 @@
-// src/components/Home.js
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope, FaMedium } from "react-icons/fa";
@@ -40,6 +39,16 @@ const Home = () => {
           <p className="text-lg">
             When I'm not coding or experimenting with new tech, you’ll find me reading, playing an active sport like volleyball or football (I can play them all day) and learning new languages (currently Japanese and Korean, crazy right!!).
           </p>
+        </div>
+
+        {/* Buttons for Education and Skills */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <Link to="/education" className="bg-gray-800 p-6 rounded hover:bg-gray-700 transition duration-300">
+            My Education
+          </Link>
+          <Link to="/skills" className="bg-gray-800 p-6 rounded hover:bg-gray-700 transition duration-300">
+            My Skills
+          </Link>
         </div>
 
         {/* Different roles Section */}
